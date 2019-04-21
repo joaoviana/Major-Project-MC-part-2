@@ -1,0 +1,46 @@
+<a-entity id="customise-menu-1" class="menu">
+  <a-text
+    id="customise-menu-title-1"
+    material="shader:flat"
+    width="4"
+    rotation="0 0 0"
+    position="-1.4 2.3 -1.5"
+    value="Select an object as your audio source"
+    text=""
+  ></a-text>
+  <a-entity id="customise-menu-entity-1">
+    <a-sphere
+      class="selection-box cube"
+      id="sphere-obj"
+      object-sound-src
+      material="color:#909aa2; opacity:0.9"
+      rotation="0 0 0"
+      position="-1.8 1 -2.5"
+      scale="0.5 0.5 0.5"
+      geometry=""
+    >
+    </a-sphere>
+    <a-box
+      class="selection-box cube"
+      id="cube-obj"
+      object-sound-src
+      material="color:#909aa2;opacity:0.9"
+      rotation="0 -40 0"
+      position="0 1 -2.5"
+      scale="0.8 .8 .8"
+      geometry=""
+    >
+    </a-box>
+    <a-torus
+      class="selection-box cube"
+      id="torus-obj"
+      object-sound-src
+      material="color:#909aa2;opacity:0.9"
+      rotation="0 0 0"
+      position="1.8 1 -2.5"
+      scale="0.5 0.5 0.5"
+      geometry=""
+    >
+    </a-torus>
+  </a-entity>
+</a-entity>
