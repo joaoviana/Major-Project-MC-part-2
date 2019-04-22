@@ -1,410 +1,159 @@
 <a-entity id="menu customise-menu-3" class="menu">
-  <a-text
-    id="room-props-title customise-menu-title-3"
-    material="shader:flat"
-    width="4"
-    rotation="0 0 0"
-    position="-1 3.5 -2.5"
-    value="Set the room properties"
-    text=""
-  ></a-text>
+  <a-text id="room-props-title customise-menu-title-3" material="shader:flat" width="4" rotation="0 0 0"
+    position="-1 3.5 -2.5" value="Set the room properties" text=""></a-text>
   <a-entity class="menu-wall-left room-props-menu">
-    <a-box
-      class="menu" 
-      material="color:#909aa2;opacity:0.9"
-      rotation="0 10 0"
-      position="-1.50 2.5 -2.5"
-      scale="1 1 0.05"
-      geometry=""
-    >
-      <a-text
-        width="2"
-        position="-.42 .7 0 "
-        value="Left Wall Material:"
-        text=""
-      ></a-text>
+    <a-box class="menu" material="color:#909aa2;opacity:0.9" rotation="0 10 0" position="-1.50 2.5 -2.5"
+      scale="1 1 0.05" geometry="">
+      <a-text width="2" position="-.42 .7 0 " value="Left Wall Material:" text=""></a-text>
     </a-box>
-    <a-entity
-      rotation="0 10 0"
-      position="-1.75 2.22 -2.40"
-      layout="type: box; margin:0.5;columns:2"
-    >
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        rotation="0 10 0"
-        class="left-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#curtain-heavy"
-      >
+    <a-entity rotation="0 10 0" position="-1.75 2.22 -2.40" layout="type: box; margin:0.5;columns:2">
+      <a-box animate-menu-item-on-hover register-selection rotation="0 10 0" class="left-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#curtain-heavy">
         <a-text position="-.45 .85 .1" width="6" value="Curtains"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        rotation="0 10 0"
-        class="left-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#metal"
-      >
+      <a-box animate-menu-item-on-hover register-selection rotation="0 10 0" class="left-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#metal">
         <a-text position="-.3 .85 .1" width="6" value="Metal"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        rotation="0 10 0"
-        class="left-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#transparent"
-      >
+      <a-box animate-menu-item-on-hover register-selection rotation="0 10 0" class="left-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#transparent">
         <a-text position="-.62d .85 .1" width="6" value="Transparent"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        rotation="0 10 0"
-        class="left-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#marble"
-      >
+      <a-box animate-menu-item-on-hover register-selection rotation="0 10 0" class="left-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#marble">
         <a-text position="-.35 .85 .1" width="6" value="Marble"></a-text>
       </a-box>
     </a-entity>
   </a-entity>
 
-  <a-entity
-    class="menu-wall-front room-props-menu"
-  >
-    <a-box
-      clss="menu"
-      material="color:#909aa2;opacity:0.9"
-      rotation="0 0 0"
-      position="-0.1 2.5 -2.5"
-      scale="1 1 0.05"
-      geometry=""
-    >
-      <a-text
-        width="2"
-        position="-.42 .7 0 "
-        value="Front Wall Material:"
-        text=""
-      ></a-text>
+  <a-entity class="menu-wall-front room-props-menu">
+    <a-box clss="menu" material="color:#909aa2;opacity:0.9" rotation="0 0 0" position="-0.1 2.5 -2.5" scale="1 1 0.05"
+      geometry="">
+      <a-text width="2" position="-.42 .7 0 " value="Front Wall Material:" text=""></a-text>
     </a-box>
-    <a-entity
-      position="-0.35 2.22 -2.47"
-      layout="type: box; margin:0.5;columns:2"
-    >
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="front-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#curtain-heavy"
-      >
+    <a-entity position="-0.35 2.22 -2.47" layout="type: box; margin:0.5;columns:2">
+      <a-box animate-menu-item-on-hover register-selection class="front-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#curtain-heavy">
         <a-text position="-.45 .85 .1" width="6" value="Curtains"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="front-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#metal"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="front-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#metal">
         <a-text position="-.3 .85 .1" width="6" value="Metal"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="front-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#transparent"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="front-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#transparent">
         <a-text position="-.62d .85 .1" width="6" value="Transparent"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="front-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#marble"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="front-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#marble">
         <a-text position="-.35 .85 .1" width="6" value="Marble"></a-text>
       </a-box>
     </a-entity>
   </a-entity>
 
-  <a-entity class="menu-wall-back room-props-menu" >
-    <a-box
-      material="color:#909aa2;opacity:0.9"
-      rotation="0 0 0"
-      position="-0.1 1.2 -2.5"
-      scale="1 1 0.05"
-      geometry=""
-    >
-      <a-text
-        width="2"
-        position="-.42 .7 0 "
-        value="Back Wall Material:"
-        text=""
-      ></a-text>
+  <a-entity class="menu-wall-back room-props-menu">
+    <a-box material="color:#909aa2;opacity:0.9" rotation="0 0 0" position="-0.1 1.2 -2.5" scale="1 1 0.05" geometry="">
+      <a-text width="2" position="-.42 .7 0 " value="Back Wall Material:" text=""></a-text>
     </a-box>
-    <a-entity
-      position="-0.35 0.9 -2.47"
-      layout="type: box; margin:0.5;columns:2"
-    >
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="back-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#curtain-heavy"
-      >
+    <a-entity position="-0.35 0.9 -2.47" layout="type: box; margin:0.5;columns:2">
+      <a-box animate-menu-item-on-hover register-selection class="back-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#curtain-heavy">
         <a-text position="-.45 .85 .1" width="6" value="Curtains"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="back-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#metal"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="back-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#metal">
         <a-text position="-.3 .85 .1" width="6" value="Metal"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="back-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#transparent"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="back-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#transparent">
         <a-text position="-.62d .85 .1" width="6" value="Transparent"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="back-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#marble"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="back-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#marble">
         <a-text position="-.35 .85 .1" width="6" value="Marble"></a-text>
       </a-box>
     </a-entity>
   </a-entity>
 
   <a-entity class="menu-wall-right room-props-menu">
-    <a-box
-      material="color:#909aa2;opacity:0.9"
-      rotation="0 -10 0"
-      position="1.3 2.5 -2.5"
-      scale="1 1 0.05"
-      geometry=""
-    >
-      <a-text
-        width="2"
-        position="-.42 .7 0 "
-        value="Right Wall Material:"
-        text=""
-      ></a-text>
+    <a-box material="color:#909aa2;opacity:0.9" rotation="0 -10 0" position="1.3 2.5 -2.5" scale="1 1 0.05" geometry="">
+      <a-text width="2" position="-.42 .7 0 " value="Right Wall Material:" text=""></a-text>
     </a-box>
-    <a-entity
-      rotation="0 -10 0"
-      position="1.05 2.22 -2.47"
-      layout="type: box; margin:0.5;columns:2"
-    >
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="right-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#curtain-heavy"
-      >
+    <a-entity rotation="0 -10 0" position="1.05 2.22 -2.47" layout="type: box; margin:0.5;columns:2">
+      <a-box animate-menu-item-on-hover register-selection class="right-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#curtain-heavy">
         <a-text position="-.45 .85 .1" width="6" value="Curtains"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="right-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#metal"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="right-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#metal">
         <a-text position="-.3 .85 .1" width="6" value="Metal"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="right-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#transparent"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="right-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#transparent">
         <a-text position="-.62d .85 .1" width="6" value="Transparent"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="right-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#marble"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="right-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#marble">
         <a-text position="-.35 .85 .1" width="6" value="Marble"></a-text>
       </a-box>
     </a-entity>
   </a-entity>
 
   <a-entity class="menu-wall-floor room-props-menu">
-    <a-box
-      material="color:#909aa2;opacity:0.9"
-      rotation="0 -10 0"
-      position="1.3 1.2 -2.5"
-      scale="1 1 0.05"
-      geometry=""
-    >
-      <a-text
-        width="2"
-        position="-.35 .7 0 "
-        value="Floor Material:"
-        text=""
-      ></a-text>
+    <a-box material="color:#909aa2;opacity:0.9" rotation="0 -10 0" position="1.3 1.2 -2.5" scale="1 1 0.05" geometry="">
+      <a-text width="2" position="-.35 .7 0 " value="Floor Material:" text=""></a-text>
     </a-box>
-    <a-entity
-      rotation="0 -10 0"
-      position="1.05 0.9 -2.47"
-      layout="type: box; margin:0.5;columns:2"
-    >
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="floor-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#curtain-heavy"
-      >
+    <a-entity rotation="0 -10 0" position="1.05 0.9 -2.47" layout="type: box; margin:0.5;columns:2">
+      <a-box animate-menu-item-on-hover register-selection class="floor-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#curtain-heavy">
         <a-text position="-.45 .85 .1" width="6" value="Curtains"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="floor-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#metal"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="floor-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#metal">
         <a-text position="-.3 .85 .1" width="6" value="Metal"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="floor-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#transparent"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="floor-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#transparent">
         <a-text position="-.62d .85 .1" width="6" value="Transparent"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="floor-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#marble"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="floor-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#marble">
         <a-text position="-.35 .85 .1" width="6" value="Marble"></a-text>
       </a-box>
     </a-entity>
   </a-entity>
 
   <a-entity class="menu-wall-ceiling room-props-menu">
-    <a-box
-      material="color:#909aa2;opacity:0.9"
-      rotation="0 10 0"
-      position="-1.5 1.2 -2.5"
-      scale="1 1 0.05"
-      geometry=""
-    >
-      <a-text
-        width="2"
-        position="-.42 .7 0 "
-        value="Ceiling Material:"
-        text=""
-      ></a-text>
+    <a-box material="color:#909aa2;opacity:0.9" rotation="0 10 0" position="-1.5 1.2 -2.5" scale="1 1 0.05" geometry="">
+      <a-text width="2" position="-.42 .7 0 " value="Ceiling Material:" text=""></a-text>
     </a-box>
-    <a-entity
-      rotation="0 10 0"
-      position="-1.75 0.9 -2.40"
-      layout="type: box; margin:0.5;columns:2"
-    >
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="ceiling-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#curtain-heavy"
-      >
+    <a-entity rotation="0 10 0" position="-1.75 0.9 -2.40" layout="type: box; margin:0.5;columns:2">
+      <a-box animate-menu-item-on-hover register-selection class="ceiling-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#curtain-heavy">
         <a-text position="-.45 .85 .1" width="6" value="Curtains"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="ceiling-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#metal"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="ceiling-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#metal">
         <a-text position="-.3 .85 .1" width="6" value="Metal"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="ceiling-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#transparent"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="ceiling-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#transparent">
         <a-text position="-.62d .85 .1" width="6" value="Transparent"></a-text>
       </a-box>
-      <a-box
-        animate-menu-item-on-hover
-        register-selection
-        class="ceiling-wall menu"
-        scale=".27 .27 .03"
-        material="shader:flat"
-        src="#marble"
-      >
+      <a-box animate-menu-item-on-hover register-selection class="ceiling-wall menu" scale=".27 .27 .03"
+        material="shader:flat" src="#marble">
         <a-text position="-.35 .85 .1" width="6" value="Marble"></a-text>
       </a-box>
     </a-entity>
   </a-entity>
 
-  <a-box
-    class="room-props-button menu"
-    set-props-button
-    position="-0.1 0.3 -2.5"
-    width="0.6"
-    height="0.2"
-    depth="0.06"
-    color="#93648D"
-  >
+  <a-box class="room-props-button menu" set-props-button position="-0.1 0.3 -2.5" width="0.6" height="0.2" depth="0.06"
+    color="#93648D">
     <a-text position="-.6 .1 -0.3" width="4" value="submit selection"></a-text>
   </a-box>
 
-  <a-box class="menu" go-back id="go-back-customise-menu-2" material="color:pink;opacity:0.9" width="0.6" height="0.2" rotation="0 5 0" position="-2.5 1.8 -2.5" scale="1 1 0.05" geometry=""> 
-    <a-text position="-0.25 0 1" width="2.4" value="Go back?">  </a-text>
-  </a-box>  
+  <a-box class="menu" go-back id="go-back-customise-menu-2" material="color:pink;opacity:0.9" width="0.6" height="0.2"
+    rotation="0 5 0" position="-2.5 1.8 -2.5" scale="1 1 0.05" geometry="">
+    <a-text position="-0.25 0 1" width="2.4" value="Go back?"> </a-text>
+  </a-box>
 </a-entity>

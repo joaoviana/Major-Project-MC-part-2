@@ -137,8 +137,11 @@ AFRAME.registerComponent("go-back", {
          //hiding environment and making a-sky visible
          let sceneEl = document.querySelector("a-scene");
          let sky = sceneEl.querySelector("#sky");
+         let wireframe = scene.querySelector('#wire-frame');
          let environment = sceneEl.querySelector("#environment");
+         let ground = sceneEl.querySelector('#ground-box');
          sky.setAttribute('visible', 'true');
+         ground.setAttribute('visible', 'false');
          environment.setAttribute('environment','active: false');     
          
         if (customAudioContext || customScene) {
@@ -146,6 +149,7 @@ AFRAME.registerComponent("go-back", {
           customAudioContext = null;
           customScene = null
         }
+        wireframe.setAttribute('visible', 'false');
         mask.setAttribute(
           "template",
           "src",

@@ -137,6 +137,8 @@ AFRAME.registerComponent("set-extra-props-button", {
     this.el.addEventListener("click", function(evt) {
       let sceneEl = document.querySelector("a-scene");
       let mask = sceneEl.querySelector("#mask");
+      let wireframe = sceneEl.querySelector('#wire-frame');
+      wireframe.setAttribute('visible', 'true');
       mask.setAttribute(
         "template",
         "src",

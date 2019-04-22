@@ -1,212 +1,66 @@
 <a-entity id="cutomise-menu-4" class="menu">
-  <a-text
-    id="customise-menu-title-4"
-    material="shader:flat"
-    width="4"
-    rotation="0 0 0"
-    position="-0.8 2.7 -1.5"
-    value="Any other changes?"
-    text=""
-  ></a-text>
+  <a-text id="customise-menu-title-4" material="shader:flat" width="4" rotation="0 0 0" position="-0.8 2.7 -1.5"
+    value="Any other changes?" text=""></a-text>
   <a-entity id="customise-menu-entity-4">
-    <a-box
-      class="selection-box menu"
-      material="color:#909aa2;opacity:1"
-      width="2"
-      height="3"
-      position="-1.8 1.8 -2.4"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
-      <a-text
-        width="4"
-        rotation="0 0 0"
-        position="-0.6 1.1 1"
-        value="speed of sound"
-      ></a-text>
+    <a-box class="selection-box menu" material="color:#909aa2;opacity:1" width="2" height="3" position="-1.8 1.8 -2.4"
+      scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-0.6 1.1 1" value="speed of sound"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-speed-of-sound
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="-1.75 2.2 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
+    <a-box class="selection-box menu" register-speed-of-sound material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="-1.75 2.2 -2.3" scale="0.8 .8 .01" geometry="">
       <a-text width="4" rotation="0 0 0" position="0 0 1" value="343"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-speed-of-sound
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="-1.75 1.6 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
+    <a-box class="selection-box menu" register-speed-of-sound material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="-1.75 1.6 -2.3" scale="0.8 .8 .01" geometry="">
       <a-text width="4" rotation="0 0 0" position="0 0 1" value="500"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-speed-of-sound
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="-1.75 1.0 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
+    <a-box class="selection-box menu" register-speed-of-sound material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="-1.75 1.0 -2.3" scale="0.8 .8 .01" geometry="">
       <a-text width="4" rotation="0 0 0" position="0 0 1" value="240"></a-text>
     </a-box>
 
-    <a-box
-      class="selection-box menu"
-      material="color:#909aa2;opacity:1"
-      width="2"
-      height="3"
-      position="0.1 1.8 -2.4"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
-      <a-text
-        width="4"
-        rotation="0 0 0"
-        position="-0.65 1.1 1"
-        value="gain of sound src"
-      ></a-text>
+    <a-box class="selection-box menu" material="color:#909aa2;opacity:1" width="2" height="3" position="0.1 1.8 -2.4"
+      scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-0.65 1.1 1" value="gain of sound src"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-sound-src-gain
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="0.11 2.2 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
+    <a-box class="selection-box menu" register-sound-src-gain material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="0.11 2.2 -2.3" scale="0.8 .8 .01" geometry="">
       <a-text width="4" rotation="0 0 0" position="-.2 0 1" value="1"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-sound-src-gain
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="0.11 1.6 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
-      <a-text
-        width="4"
-        rotation="0 0 0"
-        position="-.2 0 1"
-        value="0.7"
-      ></a-text>
+    <a-box class="selection-box menu" register-sound-src-gain material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="0.11 1.6 -2.3" scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-.2 0 1" value="0.7"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-sound-src-gain
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="0.11 1.0 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
-      <a-text
-        width="4"
-        rotation="0 0 0"
-        position="-.2 0 1"
-        value="0.5"
-      ></a-text>
+    <a-box class="selection-box menu" register-sound-src-gain material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="0.11 1.0 -2.3" scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-.2 0 1" value="0.5"></a-text>
     </a-box>
 
-    <a-box
-      class="selection-box menu"
-      material="color:#909aa2;opacity:1"
-      width="2"
-      height="3"
-      position="2.1 1.8 -2.4"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
-      <a-text
-        width="4"
-        rotation="0 0 0"
-        position="-0.2 1.1 1"
-        value="rolloff"
-      ></a-text>
+    <a-box class="selection-box menu" material="color:#909aa2;opacity:1" width="2" height="3" position="2.1 1.8 -2.4"
+      scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-0.2 1.1 1" value="rolloff"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-rolloff
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="2.08 2.2 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
-      <a-text
-        width="4"
-        rotation="0 0 0"
-        position="-.5 0 1"
-        value="linear"
-      ></a-text>
+    <a-box class="selection-box menu" register-rolloff material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="2.08 2.2 -2.3" scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="linear"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-rolloff
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="2.08 1.6 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
-      <a-text
-        width="4"
-        rotation="0 0 0"
-        position="-.5 0 1"
-        value="logarithmic"
-      ></a-text>
+    <a-box class="selection-box menu" register-rolloff material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="2.08 1.6 -2.3" scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="logarithmic"></a-text>
     </a-box>
-    <a-box
-      class="selection-box menu"
-      register-rolloff
-      material="color:#909aa2;opacity:1"
-      width="1.5"
-      height=".5"
-      position="2.08 1.0 -2.3"
-      scale="0.8 .8 .01"
-      geometry=""
-    >
-      <a-text
-        width="4"
-        rotation="0 0 0"
-        position="-.5 0 1"
-        value="none"
-      ></a-text>
+    <a-box class="selection-box menu" register-rolloff material="color:#909aa2;opacity:1" width="1.5" height=".5"
+      position="2.08 1.0 -2.3" scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="none"></a-text>
     </a-box>
   </a-entity>
 
-  <a-box
-    class="extra-props-button menu"
-    set-extra-props-button
-    position="0 0.3 -2"
-    width="0.9"
-    height="0.2"
-    depth="0.06"
-    color="#93648D"
-  >
+  <a-box class="extra-props-button menu" set-extra-props-button position="0 0.3 -2" width="0.9" height="0.2"
+    depth="0.06" color="#93648D">
     <a-text position="-.6 .1 -0.3" width="4" value="submit selection"></a-text>
   </a-box>
 
-  <a-box  go-back class="menu" id="go-back-customise-menu-3" material="color:pink;opacity:0.9" width="0.6" height="0.2" rotation="0 5 0" position="-1 3 -1.5" scale="1 1 0.05" geometry=""> 
-    <a-text position="-0.25 0 1" width="2.4" value="Go back?">  </a-text>
-  </a-box> 
+  <a-box go-back class="menu" id="go-back-customise-menu-3" material="color:pink;opacity:0.9" width="0.6" height="0.2"
+    rotation="0 5 0" position="-1 3 -1.5" scale="1 1 0.05" geometry="">
+    <a-text position="-0.25 0 1" width="2.4" value="Go back?"> </a-text>
+  </a-box>
 </a-entity>
