@@ -65,6 +65,8 @@ function handleCustomisedSelection(customPropsObj) {
 
   customObject = customPropsObj;
 
+  styleWallMaterials(customObject);
+
   //call init audio here with new customPropsObj
   initAudioCustomised(customObject);
 }
@@ -79,7 +81,7 @@ function initAudioCustomised(customPropsObj) {
   let customMaterial = setCustomRoomProperties(customPropsObj.roomProperties);
 
   //instantiate audio context and RA
-  customAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+  customAudioContext = new(window.AudioContext || window.webkitAudioContext)();
   // Create a (1st-order Ambisonic) ResonanceAudio scene.
   customScene = new ResonanceAudio(customAudioContext);
   // console.log('SCENE IN CUSTOMISED SCENE', scene);
@@ -117,22 +119,90 @@ function initAudioCustomised(customPropsObj) {
   customAudioReady = true;
 }
 
+function styleWallMaterials(obj) {
+  let sceneEl = document.querySelector("a-scene");
+  let front = sceneEl.querySelector("#front");
+  let ground = sceneEl.querySelector("#ground-box");
+  let left = sceneEl.querySelector("#left");
+  let right = sceneEl.querySelector("#right");
+  let back = sceneEl.querySelector("#back");
+  let ceiling = sceneEl.querySelector("#ceiling");
+  console.log('test source', '#'+obj.roomProperties.back);
+  console.log('front', front);
+  console.log('object: ', obj);
+  
+  if(obj.roomProperties.left == 'transparent') {
+    left.setAttribute('material', 'wireframe: true');
+    left.setAttribute('material', {src: ''});
+  } if (obj.roomProperties.left != 'transparent') {
+    console.log('changed')
+    left.setAttribute('material', 'wireframe: false');
+    left.setAttribute('material', 'color:white');
+    left.setAttribute('material', {src: '#'+obj.roomProperties.left});
+  }
+  if(obj.roomProperties.right == 'transparent') {
+    right.setAttribute('material', 'wireframe: true');
+    right.setAttribute('material', {src: ''});
+  } if (obj.roomProperties.right != 'transparent') {
+    right.setAttribute('material', 'wireframe: false');
+    right.setAttribute('material', 'color:white');
+    right.setAttribute('material', {src: '#'+obj.roomProperties.right});
+  }
+  if(obj.roomProperties.back == 'transparent') {
+    back.setAttribute('material', 'wireframe: true');
+    back.setAttribute('material', {src: ''});
+  } if (obj.roomProperties.back != 'transparent') {
+    back.setAttribute('material', 'wireframe: false');
+    back.setAttribute('material', 'color:white');
+    back.setAttribute('material', {src: '#'+obj.roomProperties.back});
+  }
+  if(obj.roomProperties.front == 'transparent') {
+    front.setAttribute('material', 'wireframe: true');
+    front.setAttribute('material', {src: ''});
+  } if (obj.roomProperties.front != 'transparent') {
+    front.setAttribute('material', 'wireframe: false');
+    front.setAttribute('material', 'color:white');
+    front.setAttribute('material', {src: '#'+obj.roomProperties.front});
+  }
+  if(obj.roomProperties.ceiling == 'transparent') {
+    ceiling.setAttribute('material', 'wireframe: true');
+    ceiling.setAttribute('material', {src: ''});
+  } if (obj.roomProperties.ceiling != 'transparent') {
+    ceiling.setAttribute('material', 'wireframe: false');
+    ceiling.setAttribute('material', 'color:white');
+    ceiling.setAttribute('material', {src: '#'+obj.roomProperties.ceiling});
+  }
+  if(obj.roomProperties.floor == 'transparent') {
+    ground.setAttribute('visible', 'false');
+    ground.setAttribute('material', 'color:white');
+    ground.setAttribute('material', {src: ''});
+  } if (obj.roomProperties.floor != 'transparent') {
+    ground.setAttribute('visible', 'true');
+    ground.setAttribute('material', 'color:white');
+    ground.setAttribute('material', {src: '#'+obj.roomProperties.floor});
+  }
+}
+
 AFRAME.registerComponent("customise-menu-sound-source", {
-  init: function() {
+  init: function () {
     this.wpVector = new THREE.Vector3();
     var isPlayingCustom = false;
-    if(customObject.geomery == 'cube') {
-        this.el.setAttribute("geometry", 'primitive: box');
+    if (customObject.geomery == 'cube') {
+      this.el.setAttribute("geometry", 'primitive: box');
     } else {
-        this.el.setAttribute("geometry", 'primitive: ' + customObject.geometry);
+      this.el.setAttribute("geometry", 'primitive: ' + customObject.geometry);
     }
-    this.el.setAttribute("position", { x: 0, y: 1, z: -3.25 });
+    this.el.setAttribute("position", {
+      x: 0,
+      y: 1,
+      z: -3.25
+    });
     this.el.setAttribute("material", "color:pink");
     this.el.setAttribute("class", "cube");
     this.el.setAttribute("mixin", "cube");
     this.el.setAttribute("shadow", "receive:true;castShadow:true");
-    this.el.addEventListener("click", function() {
-      
+    this.el.addEventListener("click", function () {
+
       if (customAudioContext) customAudioContext.resume();
 
       if (isPlayingCustom == false && customAudio) {
@@ -146,13 +216,12 @@ AFRAME.registerComponent("customise-menu-sound-source", {
       }
     });
   },
-  tick: function() {
+  tick: function () {
     var cameraEl = this.el.sceneEl.camera.el;
     if (customSource) {
       customSource.setFromMatrix(new THREE.Matrix4().getInverse(new THREE.Matrix4().multiplyMatrices(
         new THREE.Matrix4().getInverse(this.el.object3D.matrixWorld),
-        cameraEl.object3D.matrixWorld)
-    ));
+        cameraEl.object3D.matrixWorld)));
     }
   }
 });
