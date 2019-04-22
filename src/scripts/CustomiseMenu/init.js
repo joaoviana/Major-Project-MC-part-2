@@ -112,11 +112,11 @@ AFRAME.registerComponent("register-sound-src-gain", {
     this.el.addEventListener("click", function(e) {
       let gain = this.childNodes[1].components.text.attrValue.value;
       // get gain according to text box chosen
-      if (gain == "1") {
+      if (gain == "loud") {
         customiseMenuObject.gain = 1;
-      } else if (gain == "0.7") {
+      } else if (gain == "mild") {
         customiseMenuObject.gain = 0.7;
-      } else if (gain == "0.5") {
+      } else if (gain == "low") {
         customiseMenuObject.gain = 0.5;
       }
     });
