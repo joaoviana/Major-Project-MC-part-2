@@ -2,38 +2,38 @@
   <a-text id="customise-menu-title-4" material="shader:flat" width="4" rotation="0 0 0" position="-0.8 2.7 -1.5"
     value="Any other changes?" text=""></a-text>
   <a-entity id="customise-menu-entity-4">
-    <a-box class="selection-box menu" material="color:#909aa2;opacity:1" width="2" height="3" position="0.1 1.8 -2.4"
+    <a-box class="selection-box menu" material="color:#909aa2;opacity:1" width="2" height="3" position="-1.5 1.8 -2.4"
       scale="0.8 .8 .01" geometry="">
-      <a-text width="4" rotation="0 0 0" position="-0.65 1.1 1" value="gain of sound src"></a-text>
+      <a-text width="4" rotation="0 0 0" position="-0.65 1.1 1" value="Volume of Sound"></a-text>
     </a-box>
     <a-box class="selection-box menu" register-sound-src-gain material="color:#909aa2;opacity:1" width="1.5" height=".5"
-      position="0.11 2.2 -2.3" scale="0.8 .8 .01" geometry="">
+      position="-1.4 2.2 -2.3" scale="0.8 .8 .01" geometry="">
       <a-text width="4" rotation="0 0 0" position="-.2 0 1" value="loud"></a-text>
     </a-box>
     <a-box class="selection-box menu" register-sound-src-gain material="color:#909aa2;opacity:1" width="1.5" height=".5"
-      position="0.11 1.6 -2.3" scale="0.8 .8 .01" geometry="">
+      position="-1.4 1.6 -2.3" scale="0.8 .8 .01" geometry="">
       <a-text width="4" rotation="0 0 0" position="-.2 0 1" value="mild"></a-text>
     </a-box>
     <a-box class="selection-box menu" register-sound-src-gain material="color:#909aa2;opacity:1" width="1.5" height=".5"
-      position="0.11 1.0 -2.3" scale="0.8 .8 .01" geometry="">
+      position="-1.4 1.0 -2.3" scale="0.8 .8 .01" geometry="">
       <a-text width="4" rotation="0 0 0" position="-.2 0 1" value="low"></a-text>
     </a-box>
 
-    <a-box class="selection-box menu" material="color:#909aa2;opacity:1" width="2" height="3" position="2.1 1.8 -2.4"
+    <a-box class="selection-box menu" material="color:#909aa2;opacity:1" width="4" height="3" position="2.1 1.8 -2.4"
       scale="0.8 .8 .01" geometry="">
-      <a-text width="4" rotation="0 0 0" position="-0.2 1.1 1" value="rolloff"></a-text>
+      <a-text width="4" rotation="0 0 0" position="-1.5 1.1 1" value="How do you want sound to be attenuated?"></a-text>
     </a-box>
     <a-box class="selection-box menu" register-rolloff material="color:#909aa2;opacity:1" width="1.5" height=".5"
-      position="2.08 2.2 -2.3" scale="0.8 .8 .01" geometry="">
-      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="linear"></a-text>
+      position="1.5 2.2 -2.3" scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="Surreal Mode"></a-text>
     </a-box>
     <a-box class="selection-box menu" register-rolloff material="color:#909aa2;opacity:1" width="1.5" height=".5"
-      position="2.08 1.6 -2.3" scale="0.8 .8 .01" geometry="">
-      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="logarithmic"></a-text>
+      position="1.5 1.6 -2.3" scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="Closer to reality"></a-text>
     </a-box>
     <a-box class="selection-box menu" register-rolloff material="color:#909aa2;opacity:1" width="1.5" height=".5"
-      position="2.08 1.0 -2.3" scale="0.8 .8 .01" geometry="">
-      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="none"></a-text>
+      position="1.5 1.0 -2.3" scale="0.8 .8 .01" geometry="">
+      <a-text width="4" rotation="0 0 0" position="-.5 0 1" value="None"></a-text>
     </a-box>
   </a-entity>
 

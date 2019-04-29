@@ -127,7 +127,13 @@ AFRAME.registerComponent("register-rolloff", {
   init: function() {
     this.el.addEventListener("click", function(e) {
       let rolloff = this.childNodes[1].components.text.attrValue.value;
-      customiseMenuObject.rolloff = rolloff;
+      if (rolloff == 'Surreal Mode'){
+        customiseMenuObject.rolloff = 'linear';
+      } else if (rolloff == 'Closer to reality') {
+        customiseMenuObject.rolloff = 'logarithmic';
+      } else if (rolloff == 'None') {
+        customiseMenuObject.rolloff = 'none';
+      }
     });
   }
 });
@@ -183,3 +189,11 @@ AFRAME.registerComponent("open-customised-details", {
   }
 });
 
+
+AFRAME.registerComponent("play-information", {
+  init: function() {
+    this.el.addEventListener("click", function(evt) {
+      //play sound recording. 
+    });
+  }
+});
