@@ -194,6 +194,8 @@ AFRAME.registerComponent("play-information", {
   init: function() {
     this.el.addEventListener("click", function(evt) {
       //play sound recording. 
+      var informationAudio = new Audio('soundFiles/customise-menu.m4a');
+      informationAudio.play(); 
     });
   }
 });
